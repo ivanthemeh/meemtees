@@ -122,6 +122,8 @@ export function ReactionLayout(options = {}) {
       const shop = Shops.findOne(Reaction.getShopId());
       if (shop) {
         const newLayout = shop.layout.find((x) => selectLayout(x, layout, workflow));
+        console.log("layout log client/modules/routes/main.js L125");
+        console.log(newLayout);
         // oops this layout wasn't found. render notFound
         if (!newLayout) {
           BlazeLayout.render("notFound");

@@ -86,7 +86,7 @@ practicalmeteor:sinon
 
 # Performance & Debugging Tools
 # meteorhacks:fast-render                   # improve initial page loads
-# meteortoys:allthings                      # developer tools
+meteortoys:allthings                      # developer tools
 # meteortoys:notifications                  # logging notification
 # meteorhacks:kadira                        # performance monitoring
 # meteorhacks:kadira-profiler               # cpu profiling

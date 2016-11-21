@@ -116,17 +116,21 @@ Meteor.publish("Products", function (productScrollLimit = 24, productFilters, so
 
       // filter by query
       if (productFilters.query) {
+        console.log("productFilters.query");
+        console.log(productFilters.query);
         const cond = {
           $regex: productFilters.query,
           $options: "i"
         };
         _.extend(selector, {
-          $or: [{
-            title: cond
+          $and: [{
+          //   title: cond
+          // }, {
+          //   pageTitle: cond
+          // }, {
+            metafields: { $elemMatch: { key: "Catagory" }}
           }, {
-            pageTitle: cond
-          }, {
-            description: cond
+            metafields: { $elemMatch: { value: cond }}
           }]
         });
       }
