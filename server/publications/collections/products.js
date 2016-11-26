@@ -67,6 +67,7 @@ const filters = new SimpleSchema({
  * @param {Array} shops - array of shopId to retrieve product from.
  * @return {Object} return product cursor
  */
+
 Meteor.publish("Products", function (productScrollLimit = 24, productFilters, sort = {}) {
   check(productScrollLimit, Number);
   check(productFilters, Match.OneOf(undefined, filters));
@@ -107,6 +108,8 @@ Meteor.publish("Products", function (productScrollLimit = 24, productFilters, so
 
       // filter by tags
       if (productFilters.tags) {
+        console.log("productFilters.tags");
+        console.log(productFilters.tags);
         _.extend(selector, {
           hashtags: {
             $in: productFilters.tags

@@ -1,6 +1,6 @@
 [{
 	"_id": "J8Bhq3uTtdgwZx3rz",
-	"name": "Bee's Knees",
+	"name": "meemtees.com",
 	"currencies": {
 		"AED": {
 			"format": "%v %s",
@@ -3155,8 +3155,8 @@
 	],
 	"addressBook": [
 		{
-			"company": "Bee's Knees",
-			"fullName": "Bee's Knees Organic Infant Clothing",
+			"company": "meemtees.com",
+			"fullName": "meemtees.com || Badass novelty tshirt of all kinds.",
 			"address1": "123 Main St.",
 			"address2": "Warehouse #7",
 			"city": "Los Angeles",
@@ -3298,7 +3298,7 @@
 			"position": 1
 		},
 		{
-			"layout": "coreLayoutBeesknees",
+			"layout": "coreLayoutCustomShop",
 			"workflow": "coreWorkflow",
 			"collection": "Products",
 			"theme": "default",
@@ -3315,14 +3315,14 @@
 			"position": 1
 		},
 		{
-      "layout": "coreLayoutBeesknees",
+      "layout": "coreLayoutCustomShop",
       "workflow": "coreProductWorkflow",
       "collection": "Products",
       "theme": "default",
       "enabled": true,
       "structure": {
         "template": "customProductDetail",
-        "layoutHeader": "customLayoutHeader",
+        "layoutHeader": "layoutHeader",
         "layoutFooter": "",
         "notFound": "productNotFound",
         "dashboardHeader": "",
@@ -3332,14 +3332,14 @@
       }
     },
     {
-      "layout": "coreLayoutBeesknees",
+      "layout": "coreLayoutCustomShop",
       "workflow": "coreProductWorkflow",
       "collection": "Products",
       "theme": "default",
       "enabled": true,
       "structure": {
         "template": "customProductDetailSimple",
-        "layoutHeader": "customLayoutHeader",
+        "layoutHeader": "layoutHeader",
         "layoutFooter": "",
         "notFound": "productNotFound",
         "dashboardHeader": "",
@@ -3368,7 +3368,7 @@
 			"layout": "coreLayout",
 			"workflow": "coreWorkflow",
 			"theme": "default",
-			"enabled": true,
+			"enabled": false,
 			"structure": {
 				"template": "products",
 				"layoutHeader": "layoutHeader",
@@ -3385,7 +3385,7 @@
 			"workflow": "coreProductWorkflow",
 			"collection": "Products",
 			"theme": "default",
-			"enabled": true,
+			"enabled": false,
 			"structure": {
 				"template": "productDetail",
 				"layoutHeader": "layoutHeader",
